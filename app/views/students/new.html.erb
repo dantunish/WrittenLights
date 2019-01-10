@@ -1,18 +1,20 @@
-<h1>Admins#students</h1>
-<p>Find me in app/views/admins/students.html.erb</p>
+<h1>New Students</h1>
+
 
 <%= form_for(@student) do |f| %>
     <%= f.label :first_name %>
     <%= f.text_field :first_name %>
-
+    <br>
     <%= f.label :last_name %>
     <%= f.text_field :last_name %>
-
+    <br>
     <%= f.label :age %>
     <%= f.number_field(:age, in: 18.0..150.0) %>
-
+    <br>
     <%= f.label :education %>
-    <%= f.text_field :education %>
-
+    <%= f.select(:education, options_for_select([['High School'], ['College'], ['Masters'], ['PHD']])) %>
+    <br>
     <%= f.submit %>
 <% end %> 
+
+

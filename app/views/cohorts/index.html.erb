@@ -1,0 +1,16 @@
+<h1> Cohorts that exist </h1>
+
+<%= link_to "Create", new_cohort_path %>
+
+
+<% @cohorts.reverse.each do |cohort| %>
+
+<p><%= cohort.name %></p>
+<p><%= cohort.start %></p>
+<p><%= cohort.end %></p>
+<p><%= cohort.course %></p>
+<p><%= cohort.instructor %></p>
+<p><%= cohort.student %></p>
+
+<br>
+<% end %>

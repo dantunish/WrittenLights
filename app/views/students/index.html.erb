@@ -1,0 +1,14 @@
+<h1> Students Enrolled </h1>
+
+<%= link_to "Create", new_student_path %>
+
+<% @students.reverse.each do |student| %>
+
+<p><%= student.first_name %></p>
+<p><%= student.last_name %></p>
+<p><%= student.age %></p>
+<p><%= student.education %></p>
+
+<br>
+
+<% end %>

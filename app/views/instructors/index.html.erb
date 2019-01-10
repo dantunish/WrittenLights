@@ -1,0 +1,15 @@
+<h1> New Instructor </h1>
+
+<%= link_to "Create", new_instructor_path %>
+
+<% @instructors.reverse.each do |instructor| %>
+
+<p><%= instructor.first_name %></p>
+<p><%= instructor.last_name %></p>
+<p><%= instructor.age %></p>
+<p><%= instructor.salary %></p>
+<p><%= instructor.education %></p>
+
+<br>
+
+<% end %>

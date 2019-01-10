@@ -1,0 +1,8 @@
+<p><%= @instructors.first_name %></p>
+<p><%= @instructors.last_name %></p>
+<p><%= @instructors.age %></p>
+<p><%= @instructors.salary %></p>
+<p><%= @instructors.education %></p>
+
+<%= link_to "Back", instructors_path %>
+<%= link_to "Edit", edit_instructor_path(@instructor)

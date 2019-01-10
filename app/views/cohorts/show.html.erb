@@ -1,0 +1,11 @@
+
+<p><%= @cohorts.name %></p>
+<p><%= @cohorts.start %></p>
+<p><%= @cohorts.end %></p>
+<p><%= @cohorts.course %></p>
+<p><%= @cohorts.instructor %></p>
+<p><%= @cohorts.student %></p>
+<br>
+
+<%= link_to "Back", cohorts_path %>
+<%= link_to "Edit", edit_cohort_path(@cohort)

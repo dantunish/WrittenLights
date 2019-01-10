@@ -1,0 +1,11 @@
+<h1> Course Offered </h1>
+
+<%= link_to "Create", new_course_path %>
+
+<% @courses.reverse.each do |course| %>
+
+    <p><%= course.name %></p>
+    <p><%= course.hours %></p>
+    <br>
+
+<% end %>
