@@ -13,7 +13,12 @@
     <%= f.week_field(:end) %>
     <br>
     <%= f.label :course %>
-    <%= f.text_field :course %>
+    <%= select_tag 'course_id', options_from_collection_for_select(Course.all, 'id', 'name') %>
+    <%# f.select("course", "course_id", Course.all.collect {|p| [p.name, p.id]}) %>
+    <%# @post.person_id => 2:%>
+    <%#select("post", "person_id", Person.all.collect {|p| [ p.name, p.id ] }, {include_blank: 'None'})%>
+
+
     <br>
     <%= f.submit %>
 <% end %> 

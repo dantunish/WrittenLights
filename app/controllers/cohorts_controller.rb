@@ -18,6 +18,13 @@ class CohortsController < ApplicationController
 
   def index
     @cohorts = Cohort.all
+    $one = Course.all.collect
+   # @two = Cohort.merge(@one)
+
+#recent_posts = Post.order('created_at DESC').first(5)
+#Post.where(published: true).merge(recent_posts)
+# Returns the intersection of all published posts with the 5 most recently created posts.
+# (This is just an example. You'd probably want to do this with a single query!)
   end
 
   def show
