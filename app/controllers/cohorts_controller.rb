@@ -4,7 +4,7 @@ class CohortsController < ApplicationController
     if @cohort.save
       redirect_to @cohort, alert: "cohort created successfully."
     else
-      redirect_to new_cohorts_path, alert: "Error creating cohort."
+      redirect_to new_cohort_path, alert: "Error creating cohort."
     end
   end
 

@@ -14,4 +14,7 @@ Clearance.configure do |config|
   config.secure_cookie = false
   config.sign_in_guards = []
   config.user_model = User
+  #Clearance::PasswordsController.layout "my_passwords_layout"
+  #Clearance::SessionsController.layout "my_sessions_layout"
+  #Clearance::UsersController.layout "my_admin_layout"
 end
